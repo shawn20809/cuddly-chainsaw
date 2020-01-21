@@ -832,11 +832,11 @@ a:hover, a:active {
 	max-width: 100%;
 }
 
-.site-content .widget-area {
-	float: left;
+/* .widget-area {
+	float: right;
 	overflow: hidden;
 	width: 25%;
-}
+} */
 
 /*--------------------------------------------------------------
 # Content
