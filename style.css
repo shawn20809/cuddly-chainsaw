@@ -844,7 +844,7 @@ a:hover, a:active {
 
 .error-404 {
 	/* margin-left: 5%; */
-	align-content: center;
+	text-align: center;
 }
 
 /*--------------------------------------------------------------
