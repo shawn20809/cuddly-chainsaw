@@ -842,9 +842,9 @@ a:hover, a:active {
 # Content
 --------------------------------------------------------------*/
 
-.page-content {
+/* .page-content {
 	margin-left: 3%;
-}
+} */
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -865,7 +865,7 @@ a:hover, a:active {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	margin: 1.5em 0 0 3%;
 }
 
 .page-links {
