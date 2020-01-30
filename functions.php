@@ -79,6 +79,15 @@ if ( ! function_exists( 'uppercase_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+		add_theme_support('custom-header', apply_filters('uppercase_custom_header_args', array(
+			'default-image'				=> '',
+			'default-text-color'		=> '000000',
+			'width'						=> 1000,
+			'height'					=> 250,
+			'flex-height'				=> true,
+			'wp-head-callback'			=> 'uppercase_header_style',
+		)));
 	}
 endif;
 add_action( 'after_setup_theme', 'uppercase_setup' );
@@ -131,20 +140,6 @@ function uppercase_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'uppercase_scripts' );
-
-
-function themename_custom_header_setup() {
-    $args = array(
-        'default-image'      => get_template_directory_uri() . 'img/header-img.jpg',
-        'default-text-color' => '000',
-        'width'              => 1000,
-        'height'             => 250,
-        'flex-width'         => true,
-        'flex-height'        => true,
-	)
-    add_theme_support( 'custom-header', $args );
-}
-add_action( 'after_setup_theme', 'themename_custom_header_setup' );
 
 require get_template_directory() . '/inc/custom-header.php';
 
