@@ -86,7 +86,6 @@ if ( ! function_exists( 'cuddlychainsaw_setup' ) ) :
 			'width'						=> 1000,
 			'height'					=> 250,
 			'flex-height'				=> true,
-			// 'wp-head-callback'			=> 'cuddlychainsaw_header_style',
 		)));
 	}
 endif;
